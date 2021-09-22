@@ -1,9 +1,7 @@
-import React,{Component} from "react";
 import Producto from "../Product/Product";
 
-export default class ListProducts extends Component {
-    render() {
-        return (
+function ItemListContainer() {
+    return (
             <div>
                 <Producto title="tarta Frutilla" price="1200" />
                 <Producto title="tarta Frutilla2" price="800" />
@@ -11,5 +9,6 @@ export default class ListProducts extends Component {
                 <Producto title="tarta Frutilla4" price="1000" />
             </div>
         )
-    }
 }
+    
+export default ItemListContainer;

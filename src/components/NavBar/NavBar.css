@@ -20,7 +20,3 @@ header > div {
     float: right;
 }
 
-button.MuiButtonBase-root.MuiButton-root.MuiButton-contained {
-    background: beige;
-    color: inherit;
-}

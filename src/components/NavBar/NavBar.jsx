@@ -1,14 +1,11 @@
 import logo from '../../assets/logosas.png';
 import './NavBar.css';
+import CartWidget from '../CartWidget/CartWidget'
 //external components
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-
-
 
 function NavBar() {
   return (
@@ -27,12 +24,7 @@ function NavBar() {
             <li><Button color="inherit">FAQ</Button></li>
         </ul>
         </div>
-        <div className='cart-buttonNav'>
-          <Button variant='contained'>
-            <FontAwesomeIcon icon={faShoppingCart} />
-            <p>2</p>
-          </Button>
-        </div>
+        <CartWidget />
         </Toolbar>
       </AppBar>
   );
